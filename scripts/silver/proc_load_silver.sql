@@ -2,15 +2,15 @@
 
 =================================================================================================================
 
-Stored  Procedure: Load Silver Layer (Source -> Silver)
+Stored  Procedure: Load Silver Layer (Bronze -> Silver)
 
 =================================================================================================================
 
 Script Purpose:
-	This stored procedure loads data into the 'silver' schema from 'bronze'.
+	This stored procedure the ETL (Extract, Transform, Load) process to populate the 'silver' schema tables the  from 'bronze' schema.
 	It performs the following actions:
-	- Truncate the silver tables before loading data.
-	- Uses the `INSERT INTO` command to load data from bronze tables.
+	- Truncates silver tables.
+	- Insert transformed and cleansed data from Bronze into Silver Tables.
 
 Parameters:
 	None.
